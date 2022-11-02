@@ -1,0 +1,174 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .float-img{
+    float: left;
+    浮動靠左
+    margin: 0px 0px 50px 50px;
+    上下左右間距
+} */
+
+.header{
+/* 導引列表設定 */
+    width: 100%;
+    position:sticky;
+    /* 黏貼式固定 */
+    top: 0;
+    right: 0;
+    color: black;
+    text-align: right;
+    /* border: 0px solid #888; */
+    font-family: 'Noto Sans TC',"Microsoft JhengHei", sans-serif;
+}
+
+.header-logo{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 1;
+    /* 堆疊 */
+}
+
+.col{
+    width: 440px;
+    /* float: left; */
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow:
+    4px 4px 5px 5px #979797;
+    /* 陰影設定 */
+}
+
+.col img{
+    width: 100%;
+    justify-content: center;
+}
+
+.claer-fix{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+/*網站介紹*/
+.banner {
+    width: 100%;
+    max-width: 2400px;
+    height: 500px;
+    justify-content: center;
+    /*背景縮寫技巧  漸層：(角度，背景色，第一個漸層色空間，第二個漸層色空間) background-position / 漸層寬高;*/
+    background: linear-gradient(115deg, #FF5151 50%, transparent 50%) center center /
+        100% 100%, /*多重背景寫法  url(背景連結) background-position /圖片寬高*/
+        url("jpg/01.jpg")
+        right center / auto 100%;
+}
+
+
+.banner-txt{
+    height: 100%;
+    padding: 160px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+}
+
+h1{
+    font-size: 80px;
+    border-bottom: 1px solid #333;
+    font-family: 'Noto Sans TC',"Microsoft JhengHei", sans-serif;
+}
+
+h1 small{
+    display: block;
+    font-size: 35px;
+    font-family: 'Noto Sans TC',"Microsoft JhengHei", sans-serif;
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Noto Sans TC',"Microsoft JhengHei", sans-serif;
+}
+p{
+    font-size: 30px;
+    font-family: 'Noto Sans TC',"Microsoft JhengHei", sans-serif;
+}
+
+
+.banner2 {
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    /*背景縮寫技巧  漸層：(角度，背景色，第一個漸層色空間，第二個漸層色空間) background-position / 漸層寬高;*/
+    background: linear-gradient(65deg, transparent 50%, #e260f3 50%) right center /100% 100%, 
+    /*多重背景寫法  url(背景連結) background-position /圖片寬高*/
+        url("jpg/02.jpg") left center / auto 100%;
+}
+
+.banner-txt2{
+    height: 100%;
+    padding: 160px 0px;
+    display: flex;
+    float: right ;
+    flex-direction: column;
+    justify-self: right;
+    align-items: flex-start;
+}
+
+
+
+.banner3 {
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    /*背景縮寫技巧  漸層：(角度，背景色，第一個漸層色空間，第二個漸層色空間) background-position / 漸層寬高;*/
+    background: linear-gradient(115deg, #c2f5fc 50%, transparent 50%) center center /
+        100% 100%, /*多重背景寫法  url(背景連結) background-position /圖片寬高*/
+        url("jpg/03.jpg")
+        right center / auto 100%;
+}
+
+.banner-txt3{
+    height: 100%;
+    padding: 160px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+}
+
+/*頂部選單設定*/
+nav{
+    background-color: rgb(255, 255, 255);
+    /* 背景顏色 */
+    font-size: 0px;
+    /* 文字間距0 */
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    /* 無連結特效 */
+    display: inline-block;
+    padding: 50px 20px;
+    font-size: 22px;
+    /* 字體大小 */
+    /*font-weight: bold;*/
+    /* 粗體 */
+    background-color: white;
+    transition: 0.5s;
+    font-family: 'Noto Sans TC',"Microsoft JhengHei", sans-serif;
+}
+
+nav a:hover{
+    background-color: pink
+    /* 觸碰到選單時變為粉色 */
+}
