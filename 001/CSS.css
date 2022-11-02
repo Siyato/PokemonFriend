@@ -1,0 +1,111 @@
+/* 對H2給予設定 */
+h2{  
+    color: deeppink;
+}
+/* 對P給予設定 */
+p{
+    color: blue;
+}
+
+.food{
+    color: navy;
+}
+
+.person{
+    color: red;
+}
+
+.background-grey{
+    background-color: grey;
+}
+
+/* ID 要用# 分類要用. */
+#css-h1{
+    color: rgb(164, 17, 209);
+}
+
+.container div {
+    border: 1px solid rgba(7, 7, 7, 0.336);
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+}
+
+
+
+
+/*flex 設定橫向 左至右  數值比例  order小到大排序
+    .box-3{
+    flex: 1;
+    order: 1;
+    }
+*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 自動換行 */
+    flex-direction:row; /*預設 由左至右 flex-direction:row-reverse 由右至左*/
+    /* 
+    flex-direction:column;
+    flex-direction:column-reverse;
+    改為由上而下
+    reverse由下而上  */
+    height: 300px;
+    border: 1px solid rgba(7, 7, 7, 0.336);
+    justify-content: center;
+    /* center置中，flex-end靠右對齊，flex-start靠左對齊，space-around分散，space-between靠左靠右置中，space-evenly平均分散 */
+    align-content: center;
+    /* 次軸設定 */
+
+}
+
+/* 顏色變換動畫 */
+@keyframes change-color {
+    font {background-color:red;}
+    to {background-color: darkorchid;}
+}
+
+.box{
+    background-color: rgb(255, 0, 0);
+}
+
+
+.box-animation{
+    animation-name: change-color;
+    /* 套用動畫顏色名 */
+    animation-duration: 5s;
+    /* duration設定動畫時間 */
+    animation-iteration-count: 3;
+    /* 設定動畫次數 */
+    animation-delay: 2s;
+    /* 網頁載入後延遲時間 */
+}
+
+
+
+
+/* 對以下相同標籤賦予設定
+#css-h1, .food, .person{
+    background-color: grey;
+} */
+
+/* 對整個網頁套用設定
+*{
+    background-color: grey;
+} */
+
+/* 尋找ul內部的li套用設定
+ul li{
+    background-color: grey;
+} */
+
+/* 對type標籤套用設定
+[type]{
+    background-color: grey;
+} */
+
+/* 滑鼠滑過H1標籤時賦予設定
+h1:hover{
+    background-color: grey;
+} */
